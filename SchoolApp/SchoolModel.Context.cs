@@ -30,5 +30,6 @@ namespace SchoolApp
         public virtual DbSet<Enrollment> Enrollments { get; set; }
         public virtual DbSet<Instructor> Instructors { get; set; }
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<tblUser> tblUsers { get; set; }
     }
 }

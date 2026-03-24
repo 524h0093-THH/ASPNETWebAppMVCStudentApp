@@ -1,0 +1,15 @@
+﻿@{ Layout = null; } <!-- Không dùng layout chung để tránh hiện menu khi chưa login -->
+<h2>ĐĂNG NHẬP HỆ THỐNG</h2>
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <div>
+        Tên đăng nhập: <input type="text" name="username" required />
+    </div>
+    <br />
+    <div>
+        Mật khẩu: <input type="password" name="password" required />
+    </div>
+    <br />
+    <button type="submit">Đăng nhập</button>
+}
+<p style="color:red">@ViewBag.Error</p>

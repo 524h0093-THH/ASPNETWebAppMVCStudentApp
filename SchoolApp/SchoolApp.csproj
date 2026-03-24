@@ -129,6 +129,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CoursController.cs" />
     <Compile Include="Controllers\DepartmentsController.cs" />
     <Compile Include="Controllers\EnrollmentsController.cs" />
@@ -167,6 +168,9 @@
       <DependentUpon>SchoolModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Student.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUser.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -263,6 +267,7 @@
     <Content Include="Views\Enrollments\Details.cshtml" />
     <Content Include="Views\Enrollments\Edit.cshtml" />
     <Content Include="Views\Enrollments\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
